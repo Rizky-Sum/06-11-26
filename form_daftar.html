@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemen Formulir HTML & Persiapan Integrasi Backend PHP</title>
+</head>
+<body>
+    <h1>Formuril pendaftaran</h1>
+    
+    <form action="proses_daftar.php" method="POST">
+        <fieldset>
+
+        <label for="nama">Nama Lenkap :</label>
+        <input type="text" id="nama" name="nama" required placeholder="Masukan Nama Lenkap"><br><br>
+
+        <label for="email">Alamat Email :</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Password :</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+
+        <label for="jenis_kelamin">Jenis Kelamin :</label>
+
+        <input type="radio" id="laki-laki" name="jenis_kelamin" value="Laki-laki" required>
+        <label for="laki-laki">Laki-laki</label>
+
+        <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan" required>
+        <label for="perempuan">Perempuan</label><br><br>
+
+        <label for="Jurusan/Divisi">Jurusan/Divisi :</label>
+        <select id="jurusan" name="jurusan" required>
+            <option value="">Pilih Jurusan/Divisi</option>
+            <option value="TKJ">TKJ</option>
+            <option value="RPL">RPL</option>
+            <option value="DPIB">DPIB</option>
+        </select><br><br>
+
+        <label for="kehalian/minat">Kehalian/Minat : </label><br>
+
+        <input type="checkbox" id="html" name="name[]" value="htm">
+        <label for="html">HTML</label><br>
+
+        <input type="checkbox" id="css" name="name[]" value="css">
+        <label for="css">CSS</label><br>
+
+        <input type="checkbox" id="js" name="name[]" value="js">
+        <label for="js">JS</label><br><br>
+
+        <label for="alamat">Alamat Lenkap</label><br>
+        <textarea id="alamat" name="alamat" required cols="50" rows="6"></textarea><br><br>
+
+        <button type="submit" name="" value="tombol_eksekusi">Submit</button>
+        <button type="reset" name="" value="tombol_batal">Reset</button>
+        </fieldset>
+    </form>
+</body>
+</html>
